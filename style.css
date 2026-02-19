@@ -1,0 +1,411 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* ================= LOGIN ================= */
+
+.login-body {
+    height: 100vh;
+    background: linear-gradient(135deg, #1976d2, #ff9800);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card {
+    background: white;
+    width: 380px;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.login-card h2 {
+    margin-bottom: 20px;
+    color: #0d47a1;
+}
+
+.login-card input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.login-card button {
+    width: 100%;
+    padding: 10px;
+    background: #1976d2;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.login-card button:hover {
+    background: #0d47a1;
+}
+
+.login-link {
+    margin-top: 10px;
+    display: block;
+    font-size: 13px;
+    color: #1976d2;
+    text-decoration: none;
+}
+
+/* ================= HEADER ================= */
+
+.header {
+    background: linear-gradient(90deg, #0d47a1, #1976d2);
+    color: white;
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* ================= LAYOUT ================= */
+
+.container {
+    padding: 30px;
+    background: #f4f6f9;
+    min-height: 100vh;
+}
+
+/* ================= MENU BOX ================= */
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.menu-box {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    text-decoration: none;
+    color: #0d47a1;
+    font-weight: 600;
+}
+
+.menu-box:hover {
+    transform: translateY(-5px);
+    background: #1976d2;
+    color: white;
+}
+
+/* ================= CARD ================= */
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* ================= TABLE ================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th {
+    background: #1976d2;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* ================= BUTTON WARNA ================= */
+
+.btn-biru { background:#1976d2; color:white; padding:6px 10px; border:none; border-radius:5px; }
+.btn-hijau { background:#2e7d32; color:white; padding:6px 10px; border:none; border-radius:5px; }
+.btn-merah { background:#c62828; color:white; padding:6px 10px; border:none; border-radius:5px; }
+.btn-kuning { background:#f9a825; color:white; padding:6px 10px; border:none; border-radius:5px; }
+.menu-box {
+    width: 100%;
+    padding: 20px;
+    margin: 10px 0;
+    background: linear-gradient(90deg,#ff9800,#0066cc);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-biru {
+    background: #0066cc;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-hijau {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-merah {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-kuning {
+    background: #ffc107;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.box-option {
+    display: block;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.box-option input {
+    display: none;
+}
+
+.box-jurusan {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    transition: 0.3s;
+}
+
+.box-option input:checked + .box-jurusan {
+    border-color: #0066cc;
+    background: linear-gradient(90deg,#ff9800,#0066cc);
+    color: white;
+}
+/* Background Login */
+.bg-login {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #ff9800, #0066cc);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Wrapper */
+.login-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Card Login */
+.login-card {
+    background: white;
+    padding: 35px;
+    width: 320px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 25px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+/* Judul */
+.login-card h2 {
+    margin: 0;
+    color: #0066cc;
+}
+
+.subtitle {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Input */
+.login-card input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* Tombol Login */
+.btn-login {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(90deg,#ff9800,#0066cc);
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Tombol Back */
+.btn-back {
+    width: 100%;
+    padding: 8px;
+    background: #ddd;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Alert */
+.alert {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+/* Layout Form Modern */
+.container-form {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.card-form {
+    width: 600px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* Form */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+/* Summary Box */
+.summary-box {
+    background: #f4f6f9;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 5px solid #0066cc;
+}
+
+/* Button Styles */
+.btn-primary {
+    background: linear-gradient(90deg,#ff9800,#0066cc);
+    border: none;
+    padding: 12px;
+    color: white;
+    width: 100%;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-success {
+    background: #28a745;
+    border: none;
+    padding: 12px;
+    color: white;
+    width: 100%;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    background: #ccc;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.back-btn{
+    position:absolute;
+    left:20px;
+    top:15px;
+    text-decoration:none;
+    color:white;
+    font-size:20px;
+}
+.btn-back-link{
+    display:inline-block;
+    margin-top:10px;
+    text-decoration:none;
+    color:#0066cc;
+    font-weight:bold;
+}
+.header{
+    background:linear-gradient(90deg,#ff9800,#0066cc);
+    color:white;
+    padding:15px;
+    position:relative;
+    font-weight:bold;
+}
+
+.back-btn{
+    position:absolute;
+    left:15px;
+    top:12px;
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+}
+.btn-danger{
+    background:#dc3545;
+    color:white;
+    padding:10px;
+    border:none;
+    border-radius:6px;
+}
+
+.btn-success{
+    background:#28a745;
+    color:white;
+    padding:10px;
+    border:none;
+    border-radius:6px;
+}
